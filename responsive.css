@@ -1,0 +1,80 @@
+/* Dispositivo = Tablets, Ipads (retrato)
+     Tela = 768px a 1024px */
+     @media (max-width: 1024px) {
+        /* Reduzir o tamanho do input de pesquisa */
+        .input-container {
+          width: 250px;
+        }
+      
+        .esconde-outros-icones {
+          display: none;
+        }
+      
+        .video {
+          max-width: 300px;
+        }
+      }
+      
+      @media (max-width: 767px) {
+        .menu-sanduiche,
+        .header-centro, 
+        .inscricoes, 
+        .explorar, 
+        .mais-youtube, 
+        .configuracoes, 
+        .final, 
+        .outros-icones,
+        hr {
+          display: none;
+        }
+      
+        .sidebar {
+          display: none;
+        }
+        
+      
+        .video-container, .filtros{
+          width: 100%;
+          left: 0;
+    
+        }
+        .video-container{
+          margin: 150px 16px;
+
+        }
+        .video {
+          max-width: 90%;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        
+        .sidebar {
+          display: none;
+        }
+
+        .sidebar a {
+          justify-content: space-evenly;
+        }
+      
+        .filtros{
+          width: 100%;
+          margin: 0;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      
+        .video-container {
+          width: 100%;
+          justify-content: center;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 50px; /* diferença do menu inferior */
+          margin: 140px 0 0 0;
+        }
+      
+        .aumenta-video-container {
+          margin-top: 140px;
+        }
+      
+      }
